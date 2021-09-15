@@ -66,10 +66,13 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.22.1</version>
                 </plugin>
+                
+                <!--Use this, not need as tut 3 vid 235-->
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>3.2.2</version>
                 </plugin>
+                
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>
                     <version>2.5.2</version>
@@ -79,17 +82,19 @@
                     <version>2.8.2</version>
                 </plugin>
                 
-                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
+                
+                <!--Tut 3 vid 235, but now not need -> use exitsting this plugin-->
+<!--                 https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>2.4</version>
+                    <version>3.2.2</version>
                     <configuration>
                         <warSourceDirectory>src/main/webapp</warSourceDirectory>
                         <warName>springmvc</warName>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
-                </plugin>
+                </plugin>-->
                 
             </plugins>
         </pluginManagement>
